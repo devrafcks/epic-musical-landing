@@ -1,0 +1,171 @@
+
+.music {
+    padding: 4rem 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.music::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        radial-gradient(circle at 30% 50%, rgba(212, 175, 55, 0.08) 0%, transparent 50%),
+        radial-gradient(circle at 70% 50%, rgba(74, 30, 79, 0.1) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+.music__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.music__title {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    color: var(--gold);
+    text-align: center;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.music__icon {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    animation: float 3s ease-in-out infinite;
+    display: inline-flex;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.music__subtitle {
+    text-align: center;
+    font-size: 1.3rem;
+    color: var(--text-light);
+    margin-bottom: 4rem;
+    font-style: italic;
+}
+.carousel {
+    position: relative;
+    padding: 2rem 0;
+    max-width: 800px;
+    margin: 0 auto; 
+}
+
+/* **ESTRUTURA CRÍTICA: Esconde o excesso** */
+.carousel__track-container {
+    overflow: hidden;
+    position: relative;
+}
+
+/* **ESTRUTURA CRÍTICA: Alinha os slides e permite transição** */
+.carousel__track {
+    display: flex;
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1); /* Transição para movimento suave */
+}
+
+/* **ESTRUTURA CRÍTICA: Cada slide ocupa 100%** */
+.carousel__slide {
+    min-width: 100%;
+    flex: 0 0 100%; /* Garante que o item não encolha nem cresça */
+    padding: 0 1rem;
+    box-sizing: border-box;
+}
+
+.carousel__content {
+    background: rgba(255, 255, 255, 0.05);
+    border: 2px solid rgba(212, 175, 55, 0.3);
+    border-radius: 20px;
+    padding: 2rem;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.carousel__album-title {
+    font-size: 1.8rem;
+    color: var(--gold);
+    margin-bottom: 1.5rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+/* Estilo dos Botões de Navegação */
+.carousel__btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(212, 175, 55, 0.9);
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: var(--text-dark);
+    box-shadow: 0 5px 20px rgba(212, 175, 55, 0.4);
+}
+
+.carousel__btn span {
+    font-size: 2.5rem;
+    line-height: 1;
+}
+
+.carousel__btn:hover {
+    background: var(--gold);
+    transform: translateY(-50%) scale(1.1);
+    box-shadow: 0 8px 30px rgba(212, 175, 55, 0.6);
+}
+
+.carousel__btn--prev {
+    left: -25px;
+}
+
+.carousel__btn--next {
+    right: -25px;
+}
+
+/* Estilo dos Indicadores (Dots) */
+.carousel__indicators {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.carousel__indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 2px solid var(--gold);
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 0;
+}
+
+.carousel__indicator--active {
+    background: var(--gold);
+    transform: scale(1.3);
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.6);
+}
+
+.carousel__indicator:hover {
+    transform: scale(1.2);
+}

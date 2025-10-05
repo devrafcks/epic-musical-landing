@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Básico -->
+    <meta name="description" content="Epic — The Musical: uma aventura épica de heróis, deuses e humanos, com música original, cenários deslumbrantes e efeitos especiais inesquecíveis.">
+    <meta name="keywords" content="Epic, musical, teatro, Jorge Rivera, espetáculo, heróis, deuses, Odisseu">
+    <meta name="author" content="Jorge Rivera-Herrans">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./src/assets/favicon.png" type="image/x-icon">
+
+    <!-- Fontes -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./src/css/global.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <title>Epic — The Musical</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__container">
+            <img  src="./src/assets/logo.png" class="header__logo">
+            <nav>
+                <ul class="header__nav">
+                    <li><a href="#music" class="header__link"> Músicas</a></li>
+                    <li><a href="#about" class="header__link">Sobre</a></li>
+                    <li><a href="#cast" class="header__link"> Elenco</a></li>
+                    <li><a href="#tickets" class="header__link">Ingressos</a></li>
+                    <li><a href="#faq" class="header__link">FAQ</a></li>
+                    <li><a href="#tickets" class="btn btn--primary"><span class="material-symbols-outlined">shopping_cart</span> Comprar Ingressos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header> 
+
+    <section class="hero">
+        <div class="hero__background"></div>
+        <div class="hero__content">
+            <h1 class="hero__title">EPIC</h1>
+            <p class="hero__subtitle">Uma jornada lendária ganha vida no palco</p>
+            <div class="hero__cta">
+                <a href="https://youtu.be/7xlB9qdxEto?si=lMLfjFZAgMbgi9cZ" class="btn btn--primary" target="_blank">
+                    <span class="material-symbols-outlined">play_circle</span>
+                    Assista agora
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="music" id="music">
+        <div class="music__container">
+            <h2 class="music__title">
+                <span class="material-symbols-outlined music__icon">library_music</span>
+                Ouça a Trilha Sonora
+            </h2>
+            <p class="music__subtitle">Mergulhe nas músicas épicas que dão vida à história</p>
+            
+            <div class="carousel">
+                <button class="carousel__btn carousel__btn--prev" aria-label="Anterior">
+                    <span class="material-symbols-outlined">chevron_left</span>
+                </button>
+                
+                <div class="carousel__track-container">
+                    <div class="carousel__track">
+                        
+                        <div class="carousel__slide">
+                            <div class="carousel__content">
+                                <h3 class="carousel__album-title">The Troy Saga</h3>
+                                <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/6SxVoqHzmrFnPno9DWedMj?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            </div>
+                        </div>
+
+                        <div class="carousel__slide">
+                            <div class="carousel__content">
+                                <h3 class="carousel__album-title">The Cyclops Saga</h3>
+                                <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/2W4RO0PnljszZbktVgqoIv?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            </div>
+                        </div>
+
+                        <div class="carousel__slide">
+                            <div class="carousel__content">
+                                <h3 class="carousel__album-title">The Ocean Saga</h3>
+                                <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/6q6FBKPiH2waQezdzpxhuz?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            </div>
+                        </div>
+
+                        <div class="carousel__slide">
+                            <div class="carousel__content">
+                                <h3 class="carousel__album-title">The Circe Saga</h3>
+                                <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/5a3uE0AyEWhLumIHo9WkWN?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            </div>
+                        </div>
+
+                        <div class="carousel__slide">
+                            <div class="carousel__content">
+                                <h3 class="carousel__album-title">The Underworld Saga</h3>
+                                <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/1JjlC7lq1Oq8KCFybHRnIH?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            </div>
+                        </div>
+
+                        <div class="carousel__slide">
+                            <div class="carousel__content">
+                                <h3 class="carousel__album-title">The Thunder Saga</h3>
+                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/0DsMhU0ERzMt6xvtGpgXvW?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            </div>
+                        </div>
+
+                        <div class="carousel__slide">
+                            <div class="carousel__content">
+                                <h3 class="carousel__album-title">The Wisdom Saga</h3>
+                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/5IaGIT4jt1J2JAXrOBPPck?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            </div>
+                        </div>
+
+                        <div class="carousel__slide">
+                            <div class="carousel__content">
+                                <h3 class="carousel__album-title">The Vengeance Saga</h3>
+                                <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/5P7YyqqjHuq7mSLqIY06jE?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            </div>
+                        </div>
+
+                        <div class="carousel__slide">
+                            <div class="carousel__content">
+                                <h3 class="carousel__album-title">The Ithaca Saga</h3>
+                                <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/4pCY75ii3U3OnAvSAdYaGU?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="carousel__btn carousel__btn--next" aria-label="Próximo">
+                    <span class="material-symbols-outlined">chevron_right</span>
+                </button>
+                
+                <div class="carousel__indicators">
+                    <button class="carousel__indicator carousel__indicator--active" data-slide="0"></button>
+                    <button class="carousel__indicator" data-slide="1"></button>
+                    <button class="carousel__indicator" data-slide="2"></button>
+                    <button class="carousel__indicator" data-slide="3"></button>
+                    <button class="carousel__indicator" data-slide="4"></button>
+                    <button class="carousel__indicator" data-slide="5"></button>
+                    <button class="carousel__indicator" data-slide="6"></button>
+                    <button class="carousel__indicator" data-slide="7"></button>
+                    <button class="carousel__indicator" data-slide="8"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about__container">
+             <div class="about__text">
+            <h2>
+                <span class="material-symbols-outlined section-icon">auto_stories</span>
+                O Musical
+            </h2>
+            <p><strong>EPIC</strong> é uma ousada adaptação musical da <em>Odisseia</em> de Homero, criada por Jorge Rivera-Herrans. Inspirado por histórias mitológicas e lendas épicas, o musical leva o público a uma jornada intensa e emocionante.</p>
+            <p>Dividido em nove álbuns conceituais, o projeto explora a jornada de Odisseu, abordando coragem, sacrifício e a busca pela identidade. Cada música é pensada para criar uma narrativa rica e envolvente.</p>
+            <p>Com influências de animes, videogames e teatro musical, <strong>EPIC</strong> combina efeitos sonoros, visuais e performances teatrais, oferecendo uma experiência única que conecta passado e presente, realidade e fantasia.</p>
+        </div>
+            <div class="about__image">
+                <img src="https://thespectatorial.ca/wp-content/uploads/2025/04/491010418_691534860078954_3670735287737308679_n.jpg" alt="Palco do Musical">
+            </div>
+        </div>
+    </section>
+
+    <section class="cast" id="cast">
+    <div class="cast__container">
+        <h2 class="cast__title">
+            <span class="material-symbols-outlined section-icon">theater_comedy</span>
+            Elenco e Personagens
+        </h2>
+        
+        <div class="cast__tabs">
+            <button class="cast__tab cast__tab--active" data-tab="heroes">
+                <span class="material-symbols-outlined">shield</span>
+                Heróis
+            </button>
+            <button class="cast__tab" data-tab="gods">
+                <span class="material-symbols-outlined">bolt</span>
+                Deuses
+            </button>
+            <button class="cast__tab" data-tab="humans">
+                <span class="material-symbols-outlined">groups</span>
+                Humanos
+            </button>
+        </div>
+
+        <!-- Heróis -->
+        <div class="cast__grid cast__grid--active" data-content="heroes">
+            <div class="cast__card">
+                <img src="./src/assets/personagens/jorge.jpeg" alt="Odisseu">
+                <div class="cast__card__overlay">
+                    <div class="cast__card__name">Jorge Rivera-Herrans</div>
+                    <div class="cast__card__role">Odisseu</div>
+                </div>
+            </div>
+            <div class="cast__card">
+                <img src="./src/assets/personagens/miguel.webp" alt="Telêmaco">
+                <div class="cast__card__overlay">
+                    <div class="cast__card__name">Miguel Veloso (MICO)</div>
+                    <div class="cast__card__role">Telêmaco</div>
+                </div>
+            </div>
+            <div class="cast__card">
+                <img src="./src/assets/personagens/Armando_julian.webp" alt="Euríloco">
+                <div class="cast__card__overlay">
+                    <div class="cast__card__name">Armando Julián</div>
+                    <div class="cast__card__role">Euríloco</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Deuses -->
+        <div class="cast__grid" data-content="gods">
+            <div class="cast__card">
+                <img src="./src/assets/personagens/Luke_Holt.webp" alt="Zeus">
+                <div class="cast__card__overlay">
+                    <div class="cast__card__name">Luke Holt</div>
+                    <div class="cast__card__role">Zeus</div>
+                </div>
+            </div>
+            <div class="cast__card">
+                <img src="./src/assets/personagens/teagan.jpg" alt="Atena">
+                <div class="cast__card__overlay">
+                    <div class="cast__card__name">Teagan Earley</div>
+                    <div class="cast__card__role">Atena</div>
+                </div>
+            </div>
+            <div class="cast__card">
+                <img src="./src/assets/personagens/Steven_Rodriguez.webp" alt="Poseidon">
+                <div class="cast__card__overlay">
+                    <div class="cast__card__name">Steven Rodriguez</div>
+                    <div class="cast__card__role">Poseidon</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Humanos -->
+        <div class="cast__grid" data-content="humans">
+            <div class="cast__card">
+                <img src="./src/assets/personagens/talya.jpeg" alt="Circe">
+                <div class="cast__card__overlay">
+                    <div class="cast__card__name">Talya Sindel</div>
+                    <div class="cast__card__role">Circe</div>
+                </div>
+            </div>
+            <div class="cast__card">
+                <img src="./src/assets/personagens/barbara.jpeg" alt="Calypso">
+                <div class="cast__card__overlay">
+                    <div class="cast__card__name">Barbara Wangui</div>
+                    <div class="cast__card__role">Calypso</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+
+    <section class="tickets" id="tickets">
+    <div class="tickets__container">
+        
+        <h2 class="tickets__title">
+            <span class="material-symbols-outlined section-icon">confirmation_number</span>
+            Ingressos
+        </h2>
+        
+        <div class="tickets__grid">
+            
+            <!-- Ingresso Padrão -->
+            <div class="ticket__card">
+                <h3 class="ticket__type">Padrão</h3>
+                <div class="ticket__price">R$ 120</div>
+                <ul class="ticket__features">
+                    <li class="ticket__feature"><span class="material-symbols-outlined">check_circle</span> Assento numerado com boa visibilidade</li>
+                    <li class="ticket__feature"><span class="material-symbols-outlined">check_circle</span> Plateia superior</li>
+                    <li class="ticket__feature"><span class="material-symbols-outlined">check_circle</span> Programa digital com informações sobre o elenco e trilha sonora</li>
+                    <li class="ticket__feature"><span class="material-symbols-outlined">check_circle</span> Acesso à experiência audiovisual completa</li>
+                </ul>
+                <a href="#" class="btn btn--primary">
+                    <span class="material-symbols-outlined">shopping_cart</span>
+                    Comprar Agora
+                </a>
+            </div>
+            
+            <!-- Ingresso VIP -->
+            <div class="ticket__card">
+                <h3 class="ticket__type">VIP</h3>
+                <div class="ticket__price">R$ 280</div>
+                <ul class="ticket__features">
+                    <li class="ticket__feature"><span class="material-symbols-outlined">check_circle</span> Plateia inferior central para imersão total</li>
+                    <li class="ticket__feature"><span class="material-symbols-outlined">check_circle</span> Meet & Greet exclusivo com o elenco</li>
+                    <li class="ticket__feature"><span class="material-symbols-outlined">check_circle</span> Programa impresso exclusivo com bastidores e making-of</li>
+                    <li class="ticket__feature"><span class="material-symbols-outlined">check_circle</span> Brinde especial temático do musical</li>
+                    <li class="ticket__feature"><span class="material-symbols-outlined">check_circle</span> Acesso prioritário à entrada</li>
+                </ul>
+                <a href="#" class="btn btn--primary">
+                    <span class="material-symbols-outlined">shopping_cart</span>
+                    Comprar Agora
+                </a>
+            </div>
+            
+            <!-- Ingresso Camarote -->
+            <div class="ticket__card">
+                <h3 class="ticket__type">Camarote</h3>
+                <div class="ticket__price">R$ 450</div>
+                <ul class="ticket__features">
+                    <li class="ticket__feature"><span class="material-symbols-outlined">check_circle</span> Camarote privativo para 4 pessoas</li>
+                    <li class="ticket__feature"><span class="material-symbols-outlined">check_circle</span> Vista panorâmica do palco e efeitos especiais</li>
+                    <li class="ticket__feature"><span class="material-symbols-outlined">check_circle</span> Serviço de gastronomia premium durante o espetáculo</li>
+                    <li class="ticket__feature"><span class="material-symbols-outlined">check_circle</span> Acesso exclusivo aos bastidores após a apresentação</li>
+                    <li class="ticket__feature"><span class="material-symbols-outlined">check_circle</span> Foto oficial com o elenco do musical</li>
+                    <li class="ticket__feature"><span class="material-symbols-outlined">check_circle</span> Brindes colecionáveis exclusivos do musical</li>
+                </ul>
+                <a href="#" class="btn btn--primary">
+                    <span class="material-symbols-outlined">shopping_cart</span>
+                    Comprar Agora
+                </a>
+            </div>
+
+        </div>
+    </div>
+    </section>
+
+    
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <div class="faq__container">
+            <h2 class="faq__title">
+                <span class="material-symbols-outlined section-icon">help_center</span>
+                Perguntas Frequentes
+            </h2>
+            <div class="faq__list">
+
+                <div class="faq__item">
+                    <div class="faq__question">Qual a duração do espetáculo?</div>
+                    <div class="faq__answer">
+                        <div class="faq__answer-content">
+                            O épico musical <strong>EPIC</strong> dura aproximadamente 2h30min, incluindo um intervalo de 15 minutos para você absorver cada momento da aventura. Recomendamos chegar com 30 minutos de antecedência para sentir a energia do teatro e se preparar para a imersão completa.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq__item">
+                    <div class="faq__question">O espetáculo é adequado para crianças?</div>
+                    <div class="faq__answer">
+                        <div class="faq__answer-content">
+                            Sim! <strong>EPIC</strong> é classificado como livre, mas por conter sequências de ação e narrativa complexa, é recomendado para maiores de 8 anos. Crianças menores de 5 anos podem entrar no colo dos responsáveis sem necessidade de ingresso. Prepare-se para encantar todas as idades com mitos, heróis e música envolvente!
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq__item">
+                    <div class="faq__question">Posso trocar ou cancelar meu ingresso?</div>
+                    <div class="faq__answer">
+                        <div class="faq__answer-content">
+                            Sim! Trocas podem ser realizadas até 48 horas antes da apresentação, sujeitas à disponibilidade. Cancelamentos com reembolso total são aceitos até 7 dias antes do espetáculo. Garantimos flexibilidade para que nada impeça você de viver essa jornada épica.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq__item">
+                    <div class="faq__question">Há estacionamento no local?</div>
+                    <div class="faq__answer">
+                        <div class="faq__answer-content">
+                            Sim, o teatro conta com estacionamento conveniado com desconto especial para o público de <strong>EPIC</strong>. Para os mais aventureiros, recomendamos transporte público: a estação de metrô mais próxima fica a apenas 5 minutos a pé do teatro. Chegar com estilo é parte da experiência!
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq__item">
+                    <div class="faq__question">Como posso me preparar para a experiência épica?</div>
+                    <div class="faq__answer">
+                        <div class="faq__answer-content">
+                            Venha com mente aberta e espírito aventureiro! Sugerimos ler um pouco sobre a <em>Odisseia</em>, conhecer os personagens ou ouvir a trilha sonora antes do espetáculo. Cada detalhe visual e sonoro foi pensado para transportar você a um mundo de deuses, heróis e aventuras imortais.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq__item">
+                    <div class="faq__question">Existe merchandising ou lembranças do musical?</div>
+                    <div class="faq__answer">
+                        <div class="faq__answer-content">
+                            Sim! Dentro do teatro você encontrará itens exclusivos de <strong>EPIC</strong>, como camisetas, pôsteres, programas impressos e brindes temáticos. É a oportunidade de levar um pedaço dessa aventura para casa.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+<footer class="footer">
+    <div class="footer__container">
+        <div class="footer__logo">EPIC</div>
+        <ul class="footer__social">
+            <li>
+                <a href="https://www.instagram.com/jayherrans/" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-instagram"></i> Instagram
+                </a>
+            </li>
+            <li>
+                <a href="https://open.spotify.com/artist/2kdmTOXncgNHSuYVMhdd5I" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-spotify"></i> Spotify
+                </a>
+            </li>
+        </ul>
+        <p class="footer__copyright">© 2025 EPIC — The Musical. Todos os direitos reservados.</p>
+    </div>
+</footer>
+
+
+    <script src="./src/main.js"></script>
+</body>
+</html>

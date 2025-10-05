@@ -1,0 +1,45 @@
+
+@import url('variables.css');
+@import url('base.css');
+@import url('header.css');
+@import url('hero.css');
+@import url('about.css');
+@import url('cast.css');
+@import url('tickets.css');
+@import url('music.css');
+@import url('faq.css');
+@import url('footer.css');
+
+@media (max-width: 768px) {
+    .header__nav {
+        gap: 1rem;
+        font-size: 0.9rem;
+        flex-wrap: wrap;
+    }
+
+    .header__link .material-symbols-outlined,
+    .btn .material-symbols-outlined {
+        display: none;
+    }
+
+    .about__container {
+        grid-template-columns: 1fr;
+    }
+
+    .cast__tabs {
+        gap: 1rem;
+    }
+
+    .cast__tab {
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+    }
+
+    .carousel__btn--prev {
+        left: 0;
+    }
+
+    .carousel__btn--next {
+        right: 0;
+    }
+}
